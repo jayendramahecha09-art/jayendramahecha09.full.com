@@ -155,4 +155,29 @@ nav a:hover::after{
     grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
     gap:20px;
 >>>>>>> dcda932d285c300bb3b565b2a3774a4ab79cc819
+}.profile{
+    border-radius:50%;
+    box-shadow:0 0 20px #00f2ff;
+    margin:15px;
+}
+
+/* ENTRY ANIMATION */
+.card{
+    animation:fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(40px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* BUTTON GLOW */
+.btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 20px #00f2ff;
+}
+
+/* TEXT GLOW */
+h1, h2{
+    text-shadow:0 0 10px #00f2ff;
 }
